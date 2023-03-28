@@ -7,6 +7,21 @@ body {
 
 }
 
+.album-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.album-info img {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.album-info p {
+  width: 60%;
+  font-size: 1.5rem;
+}
 
 
 .fade-in {
