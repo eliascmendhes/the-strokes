@@ -1,12 +1,13 @@
+/* Propriedades globais */
 body {
   background-color: #000000;
   background-image: url("./assets/underground_background.jpg");
   background-size: cover;
   color: #ffffff;
   font-family: 'VT323', monospace;
-
 }
 
+/* Componente Album Info */
 .album-info {
   display: flex;
   flex-direction: row;
@@ -23,7 +24,7 @@ body {
   font-size: 1.5rem;
 }
 
-
+/* Animação Fade In */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -36,7 +37,7 @@ body {
   transform: translateY(0);
 }
 
-
+/* Componente Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -58,7 +59,6 @@ nav h1 {
 nav ul {
   list-style: none;
   display: flex;
-
 }
 
 nav a {
@@ -74,9 +74,9 @@ nav a {
 nav a:hover {
   color: #b30000;
   border-bottom: 2px solid #b30000;
-
 }
 
+/* Elemento Main */
 main {
   padding: 40px 20px;
   margin-top: -40px;
@@ -88,7 +88,6 @@ h2 {
   border-bottom: 2px solid #b30000;
   font-family: 'Monoton', cursive;
   text-transform: uppercase;
-
 }
 
 img {
@@ -98,7 +97,6 @@ img {
   margin-bottom: 40px;
   border: 2px solid #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 ul {
@@ -113,7 +111,6 @@ li {
   align-items: center;
   font-size: 1.5rem;
   font-family: 'VT323', monospace;
-
 }
 
 li span {
@@ -130,6 +127,7 @@ li:hover span {
   color: white;
 }
 
+/* Breakpoint de mídia */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -150,24 +148,25 @@ li:hover span {
   }
 
   h2 {
-    margin-top: 40px;
+    margintop: 40px;
     font-size: 22px;
     border-bottom: 2px solid #ff4d4d;
-  }
-
-  img {
+    }
+    
+    img {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 30px;
     border: 2px solid #ff4d4d;
-  }
-
-  li span {
+    }
+    
+    li span {
     font-size: 16px;
-  }
-
-  li {
+    }
+    
+    li {
     margin: 10px 0;
     font-size: 16px;
-  }
-}
+    }
+    
+     
