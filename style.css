@@ -3,8 +3,8 @@ body {
   background-color: #000000;
   background-image: url("./assets/underground_background.jpg");
   background-size: cover;
-  color: #ffffff;
   font-family: 'VT323', monospace;
+  color: #ffffff;
 }
 
 /* Componente Album Info */
@@ -127,7 +127,37 @@ li:hover span {
   color: white;
 }
 
-/* Breakpoint de mídia */
+/* Estilo para o footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease; 
+}
+
+.footer-content a:hover {
+  color: #b30000; 
+}
+
+
+/* Responsividade */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -168,5 +198,58 @@ li:hover span {
     margin: 10px 0;
     font-size: 16px;
     }
-    
-     
+
+@media (max-width: 768px) {
+
+ 
+  nav {
+      flex-direction: column;
+  }
+  
+  nav h1 {
+      margin-bottom: 10px;
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+  }
+
+  
+  .album-info {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .album-info img {
+      width: 80%;
+      margin-bottom: 20px;
+      margin-right: 0; 
+  }
+
+  .album-info p {
+      width: 100%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+
+  
+  nav h1 {
+      font-size: 1.2rem;
+  }
+
+  h2 {
+      font-size: 1.4rem;
+  }
+
+  
+  .album-info img {
+      width: 100%
+  }
+}
